@@ -8,11 +8,7 @@ from flask_swagger import swagger
 from flask_cors import CORS
 from utils import APIException, generate_sitemap
 from admin import setup_admin
-<<<<<<< HEAD
 from models import db, User, Character
-=======
-from models import db, User
->>>>>>> e5b61a8c0b58ec68a018fd4ffcfe213623495b61
 #from models import Person
 
 app = Flask(__name__)

@@ -9,18 +9,13 @@ class User(db.Model):
     is_active = db.Column(db.Boolean(), unique=False, nullable=False)
 
     def __repr__(self):
-<<<<<<< HEAD
         return '<User %r>' % self.id
-=======
-        return '<User %r>' % self.username
->>>>>>> e5b61a8c0b58ec68a018fd4ffcfe213623495b61
 
     def serialize(self):
         return {
             "id": self.id,
             "email": self.email,
             # do not serialize the password, its a security breach
-<<<<<<< HEAD
         }
     
 class Character(db.Model):
@@ -57,6 +52,4 @@ class Character(db.Model):
 
 
             # do not serialize the password, its a security breach
-=======
->>>>>>> e5b61a8c0b58ec68a018fd4ffcfe213623495b61
         }
